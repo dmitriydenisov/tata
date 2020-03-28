@@ -1,0 +1,33 @@
+
+.logo {
+    display: flex;
+}
+
+.logo__title {
+    position: relative;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1;
+    color: #363636;
+    padding-right: 27px;
+}
+
+.logo__title:after {
+    position: absolute;
+    right: 0;
+    top: 1px;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 30px;
+    background-color: #ddd;
+}
+
+.logo__slogan {
+    font-size: 12px;
+    line-height: 1.17;
+    color: #4B5455;
+    padding-left: 27px;
+    width: 160px;
+    font-family: 'Uni Neue Book', sans-serif;
+}

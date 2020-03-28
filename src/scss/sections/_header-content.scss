@@ -1,0 +1,80 @@
+.header__content {
+    width: 645px;
+    flex-shrink: 0;
+}
+.header__title {
+    font-family: 'Uni Neue Book', sans-serif;
+    font-weight: 400;
+    font-size: 82px;
+    line-height: 1.1;
+    color: #363636;
+    margin-bottom: 27px;
+}
+.header__title span {
+    font-family: 'Uni Neue', sans-serif;
+    color: #69B0AC;
+
+}
+.header__text {
+    width: 440px;
+    margin-bottom: 40px;
+}
+.header__text p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #7C7C7C;
+}
+
+.header-list {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #363636;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+.header-list b {
+    font-weight: bold;
+}
+.header-list__item {
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 40px;
+
+    &:before {
+        content: "";
+        width: 20px;
+        height: 23px;
+        position: absolute;
+        left: 0;
+        top: 1px;
+        background-image: url("./../img/bulid.svg");
+    }
+}
+
+.header__img-wrapper {
+    width: 1260px;
+    height: 200px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.header__img {
+    position: absolute;
+    bottom: 0;
+    right: -86px;
+}
+
+.header__arrow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 60%);
+}
+.header__arrow-img {
+    width: 140px;
+}

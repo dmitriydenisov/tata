@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Uni Neue', sans-serif;
+}
+.container {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+@import "blocks/_header.scss";
+@import "sections/_logo.scss";
+@import "sections/_top-nav.scss";
+@import "sections/_header-content.scss";
+

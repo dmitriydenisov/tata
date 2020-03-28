@@ -1,0 +1,28 @@
+.nav {
+    padding-top: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 75px;
+}
+
+.top-nav {
+    text-transform: uppercase;
+}
+
+.top-nav__link {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 1;
+    text-decoration: none;
+    color: #363636;
+    margin-right: 48px;
+    transition: color 0.2s ease-in;
+    
+    &:last-chaild {
+        margin-right: 0;
+    }
+    &:hover {
+        color: #69b0ac;
+    }
+}
