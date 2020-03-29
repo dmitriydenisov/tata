@@ -10,6 +10,9 @@ body {
     width: 1260px;
     margin: 0 auto;
 }
+p { 
+    margin: 0; 
+    padding: 0;}
 
 @import "blocks/_header.scss";
 @import "sections/_logo.scss";

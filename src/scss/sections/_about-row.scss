@@ -1,11 +1,25 @@
 .section-about {
-
+    padding-top: 133px;
+    padding-bottom: 123px;
 }
 .section-about__heading {
+    font-family: 'Uni Neue Book', sans-serif;
+    max-width: 855px;
+    margin: 0 auto 61px;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 1.33;
+    text-align: center;
 
+    & span {
+        font-family: 'Uni Neue', sans-serif;
+        color: #69B0AC;
+    }
 }
 .section-about__row {
-
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 .section-about__video {
 
@@ -83,5 +97,18 @@
     }
 }
 .section-about__description {
+    width: 560px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #545454;
+
+    & strong {
+        font-weight: 700;
+    }
+
+    & p {
+        margin-bottom: 18px;
+
+    }
 
 }
