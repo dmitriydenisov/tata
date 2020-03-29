@@ -43,6 +43,7 @@
             border-radius: 50%;
             background: rgba(162, 173, 255, 0.2);
             transform: translate(-50%, -50%);
+            animation: circle 1s ease-out infinite;
         }
         &::after {
             position: absolute;
@@ -53,11 +54,33 @@
             height: 174px;
             border-radius: 50%;
             border: 1px solid rgba(162, 173, 255, 0.3);
-            transform: translate(-50%, -50%);;
+            transform: translate(-50%, -50%);
+            animation: wave 1s ease-out infinite;
         }
 
-    } 
-    
+    }
+}
+@keyframes circle {
+    from {
+        width: 116px;
+        height: 116px;
+    }
+    to {
+        width: 216px;
+        height: 216px;
+        opacity: 0;
+    }
+}
+@keyframes wave {
+    from {
+        width: 174px;
+        height: 174px;
+    }
+    to {
+        width: 274px;
+        height: 274px;
+        opacity: 0;
+    }
 }
 .section-about__description {
 
