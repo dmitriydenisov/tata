@@ -1,6 +1,7 @@
 .section-about {
     padding-top: 133px;
     padding-bottom: 123px;
+    background: linear-gradient(180deg, #FFFFFF 49.96%, #EFF9FF 100%);
 }
 .section-about__heading {
     font-family: 'Uni Neue Book', sans-serif;
@@ -20,9 +21,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-}
-.section-about__video {
-
+    margin-bottom: 90px;
 }
 .promo-video {    
     position: relative;
