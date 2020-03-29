@@ -10,9 +10,15 @@ body {
     width: 1260px;
     margin: 0 auto;
 }
+p { 
+    margin: 0; 
+    padding: 0;}
 
 @import "blocks/_header.scss";
 @import "sections/_logo.scss";
 @import "sections/_top-nav.scss";
 @import "sections/_header-content.scss";
+@import "blocks/_content.scss";
+@import "sections/_about-row.scss";
+@import "sections/_numbers.scss";
 
