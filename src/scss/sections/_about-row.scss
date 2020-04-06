@@ -1,14 +1,20 @@
 .section-about {
-    padding-top: 110px;
-    padding-bottom: 123px;
+    padding-top: 34px;
+    padding-bottom: 34px;
     background: linear-gradient(180deg, #FFFFFF 49.96%, #EFF9FF 100%);
+}
+@media (min-width: 1250px) {
+    .section-about { 
+        padding-top: 110px;
+        padding-bottom: 123px;  
+    }
 }
 .section-about__heading {
     font-family: 'Uni Neue Book', sans-serif;
     max-width: 855px;
-    margin: 0 auto 61px;
+    margin: 0 auto 38px;
     font-weight: normal;
-    font-size: 48px;
+    font-size: 24px;
     line-height: 1.33;
     text-align: center;
 
@@ -17,19 +23,47 @@
         color: #69B0AC;
     }
 }
+
+@media (min-width: 1250px) {
+    .section-about__heading {
+        margin: 0 auto 61px;  
+    }
+}
+
+@media (min-width: 1250px) {
+    .section-about__heading { 
+        font-size: 48px;  
+    }
+}
 .section-about__row {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 75px;
+    flex-direction: column;
 }
+@media (min-width: 1250px) {
+    .section-about__row { 
+        flex-direction: row;
+    }
+}
+.section-about__video {
+    width: 100%;
+}
+
+@media (min-width: 1250px) {
+    .section-about__video {
+        width: auto;
+    }
+}
+
 .promo-video {    
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 625px;
-    height: 420px;
+    align-items: center;    
+    max-width: 100%;
+    height: 295px;
     border-radius: 40px;
     border: 10px solid #fff;
     overflow: hidden;
@@ -37,6 +71,7 @@
     background-size: cover;
     background-position: center;
     box-shadow: 0px 80px 100px rgba(211, 226, 235, 0.8);
+    margin-bottom: 75px;
     &__play-btn {
         position: relative;
         width: 80px;
@@ -73,6 +108,13 @@
 
     }
 }
+@media (min-width: 1250px) {
+    .promo-video { 
+        margin-bottom: 0;
+        width: 625px;
+        height: 420px;
+    }
+}
 @keyframes circle {
     from {
         width: 116px;
@@ -96,7 +138,7 @@
     }
 }
 .section-about__description {
-    width: 560px;
+    width: 299px;
     font-size: 16px;
     line-height: 1.75;
     color: #545454;
@@ -110,4 +152,10 @@
 
     }
 
+}
+
+@media (min-width: 1250px) {
+    .section-about__description { 
+        width: 560px;
+    }
 }
