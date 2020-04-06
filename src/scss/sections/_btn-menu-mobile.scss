@@ -1,7 +1,6 @@
 .menu-icon {
 	z-index: 2;
 	position: fixed;
-	//display: flex;
 	top: 40px;
 	right: 17px;
     justify-content: center;
@@ -53,12 +52,14 @@
 }
 
 .menu-icon.menu-icon-active .menu-icon-line::before {
+	background-color: #fff;
 	transform: rotate(45deg);
 	top: 0;
 	transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 }
 
 .menu-icon.menu-icon-active .menu-icon-line::after {
+	background-color: #fff;
 	transform: rotate(-45deg);
 	top: 0;
 	transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
