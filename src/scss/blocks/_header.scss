@@ -1,10 +1,25 @@
 .header {
     position: relative;
-    height: 800px;
     background-color: #EEF9FF;
+    //overflow-x: hidden;
+}
+
+@media (min-width: 1168px) {
+    .header {            
+        height: 800px;
+        //overflow-x: visible;
+    }
 }
 
 .header-row {
     display: flex;
+    flex-direction: column;
 
+}
+
+@media (min-width: 1168px) {
+    .header-row {       
+        flex-direction: row;     
+        
+    }
 }

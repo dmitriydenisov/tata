@@ -7,8 +7,9 @@ body {
     font-family: 'Uni Neue', sans-serif;
 }
 .container {
-    width: 1260px;
+    max-width: 1290px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 p { 
     margin: 0; 
@@ -17,8 +18,14 @@ p {
 @import "blocks/_header.scss";
 @import "sections/_logo.scss";
 @import "sections/_top-nav.scss";
+@import "sections/_btn-menu-mobile.scss";
+@import "sections/_test.scss";
 @import "sections/_header-content.scss";
 @import "blocks/_content.scss";
 @import "sections/_about-row.scss";
 @import "sections/_numbers.scss";
 
+
+.hidden {
+    display: none !important;
+}

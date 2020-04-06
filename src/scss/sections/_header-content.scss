@@ -1,22 +1,29 @@
 .header__content {
-    width: 645px;
+    max-width: 645px;
     flex-shrink: 0;
 }
 .header__title {
     font-family: 'Uni Neue Book', sans-serif;
     font-weight: 400;
-    font-size: 82px;
+    font-size: 36px;
     line-height: 1.1;
     color: #363636;
     margin-bottom: 25px;
 }
+
+@media (min-width: 1168px) {
+    .header__title{  
+        font-size: 82px;             
+    }
+}
+
 .header__title span {
     font-family: 'Uni Neue', sans-serif;
     color: #69B0AC;
 
 }
 .header__text {
-    width: 440px;
+    max-width: 440px;
     margin-bottom: 40px;
 }
 .header__text p {
@@ -41,7 +48,7 @@
 .header-list__item {
     position: relative;
     margin-bottom: 15px;
-    padding-left: 40px;
+    padding-left: 30px;
 
     &:before {
         content: "";
@@ -54,19 +61,42 @@
     }
 }
 
-.header__img-wrapper {
-    width: 1260px;
-    height: 200px;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
+@media (min-width: 1168px) {
+    .header-list__item{ 
+        &:before { 
+            transform: translate(-50%, 0);
+            background-repeat: no-repeat;
+        }
+                
+    }
 }
+
+.header__img-wrapper {
+    width: 100%;
+}
+
+@media (min-width: 1168px) {
+    .header__img-wrapper{  
+        width: 1290px;
+        height: 200px;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);       
+    }
+}
+
 .header__img {
-    position: absolute;
-    bottom: 0;
-    right: -86px;
+    max-width: 100%;
+}
+
+@media (min-width: 1168px) {
+    .header__img {
+        position: absolute;
+        bottom: 0;
+        right: -86px;
+    }
 }
 
 .header__arrow {
