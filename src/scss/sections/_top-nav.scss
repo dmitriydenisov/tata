@@ -9,21 +9,21 @@
 .top-nav {
     z-index: 1;
     position: absolute;
-    right: -335px;
+    right: -350px;
+    display: none;
     top: 0;
     height: 100%;
     width: 335px;
     padding: 50px;
     background-color: rgba(11, 92, 65, 0.7);
     transition: transform 0.4s ease-in; 
-	display: flex;
-    align-content: flex-start;
-    flex-wrap: wrap;
+	
 }
 
 
 @media (min-width: 1168px) {
     .top-nav {
+        display: block;
         position: static;
         width: auto;
         height: auto;
@@ -34,6 +34,10 @@
 
 .top-nav--active {
     transform: translateX(-100%);   
+
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;    
 }
 
 .top-nav__list {

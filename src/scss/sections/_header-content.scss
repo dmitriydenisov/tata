@@ -99,12 +99,16 @@
     }
 }
 
-.header__arrow {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 60%);
+@media (min-width: 1168px) {
+    .header__arrow {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 60%);
+    }
+
+    .header__arrow-img {
+        width: 140px;
+    }
 }
-.header__arrow-img {
-    width: 140px;
-}
+
