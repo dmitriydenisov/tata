@@ -8,18 +8,30 @@
 
 .top-nav {
     z-index: 1;
-    position: absolute;
-    right: -350px;
+    position: fixed;
+    //right: -350px;
     display: none;
     top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     height: 100%;
-    width: 335px;
+    width: 100%;
     padding: 50px;
     background-color: rgba(11, 92, 65, 0.7);
-    transition: transform 0.4s ease-in; 
-	
+    transition: transform 0.4s ease-in; 	
 }
+// @media (min-width: 360px) {
+//     .top-nav {
+//         width: 360px;
+//     }    
+// }
 
+// @media (min-width: 400px) {
+//     .top-nav {
+//         width: 100%;
+//     }
+// }
 
 @media (min-width: 1168px) {
     .top-nav {
@@ -33,7 +45,7 @@
 }
 
 .top-nav--active {
-    transform: translateX(-100%);   
+    //transform: translateX(-100%);   
 
     display: flex;
     align-content: flex-start;
