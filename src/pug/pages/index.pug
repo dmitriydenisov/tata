@@ -3,14 +3,14 @@ extends ./../layouts/main.pug
 block variables
     - const title = "Главная"
 
-block content
+block content 
     section.section-about
         .container
             h2.section-about__heading Меня зовут Жанна, и я вам <br /> <span>помогу трансформировать</span> свою жизнь
             .section-about__row
                 .section-about__video
                     .promo-video
-                        button.promo-video__play-btn 
+                        button.promo-video__play-btn(data-btn-video="")
                             img(src="./img/play.svg", alt="")                       
                 .section-about__description
                     p Всю свою сознательную жизнь я увлекалась <strong>психологией, эзотерикой, восточной философией</strong>, 
@@ -51,3 +51,6 @@ block content
                             |Человек
                         .number__description-text
                             |Успешно прошли <br />индивидуальные тренинги
+    .modal-bg(data-modal-video="")
+        .video-modal
+            <iframe data-video="" src="https://www.youtube.com/embed/ksX_Xkf3Ryg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-video=""></iframe>

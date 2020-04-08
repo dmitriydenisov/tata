@@ -6,11 +6,19 @@
 .logo__title {
     position: relative;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 20px;
     line-height: 1;
     color: #363636;
-    padding-right: 27px;
+    padding-right: 10px;
 }
+
+@media (min-width: 768px) {
+    .logo__title {
+        font-size: 32px;
+        padding-right: 27px;
+    }
+}
+
 
 .logo__title:after {
     position: absolute;
@@ -19,15 +27,28 @@
     content: "";
     display: block;
     width: 1px;
-    height: 30px;
+    height: 25px;
     background-color: #ddd;
+}
+
+@media (min-width: 768px) {
+    .logo__title:after {
+        height: 30px;
+    }
 }
 
 .logo__slogan {
     font-size: 12px;
     line-height: 1.17;
     color: #4B5455;
-    padding-left: 27px;
-    width: 160px;
+    padding-left: 10px;
+    width: 145px;
     font-family: 'Uni Neue Book', sans-serif;
+}
+
+@media (min-width: 768px) {
+    .logo__slogan {
+        padding-left: 27px;
+        width: 160px;
+    }
 }
