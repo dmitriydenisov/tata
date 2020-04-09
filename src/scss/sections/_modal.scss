@@ -6,7 +6,7 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	z-index: 2;
+	z-index: 3;
 }
 
 .video-modal {
@@ -19,10 +19,54 @@
 }
 iframe{
     width:100%;
-    height:100%;
-    
-    /*@media (min-width: 768px){
-        width:480px;
-        height:315px;
-    }*/
+    height:100%;   
+}
+
+#close {
+	z-index: 99;
+	position: fixed;
+	top: 22px;
+    right: 15px;
+    justify-content: center;
+    align-items: center;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+@media (min-width: 1250px) {
+    #close {            
+        top: 22px;
+    	right: 64px;
+    }
+}
+
+.close-icon-line {
+	position: relative;
+	width: 30px;
+	height: 5px;
+	background-color: transparent;
+}
+
+.close-icon-line::before {
+	position: absolute;
+	left: 0;
+	top: 5px;
+	content: '';
+	width: 30px;
+	height: 5px;
+	background-color: #fff;
+	transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+	transform: rotate(45deg);
+}
+
+.close-icon-line::after {
+	position: absolute;
+	left: 0;
+	top: 5px;
+	content: '';
+	width: 30px;
+	height: 5px;
+	background-color: #fff;
+	transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+	transform: rotate(-45deg);
 }
